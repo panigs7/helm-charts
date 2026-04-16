@@ -2,7 +2,7 @@
 ########################
 # version: version of this values file
 # Note: Do not change this value
-version: "v2.16.0"
+version: "v2.19.0"
 
 images:
   # "driver" defines the container image, used for the driver container.
