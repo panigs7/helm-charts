@@ -7,7 +7,7 @@
 #  http://www.apache.org/licenses/LICENSE-2.0
 
 # This Github action will create a Github release for the container-storage-modules
-name: Release COntainer Storage Modules
+name: Release Container Storage Modules
 
 # Triggers the action when a chart release has been created and deployed
 on:
