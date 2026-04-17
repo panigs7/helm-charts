@@ -44,7 +44,7 @@ karaviMetricsPowerflex:
     skipCertificateValidation: true
 
 karaviMetricsPowerstore:
-  image: quay.io/dell/container-storage-modules/csm-metrics-powerstore:v1.14.0
+  image:  csm.artifactory.cec.lab.emc.com/csm-users/cicd/csm-metrics-powerstore:nightly
   enabled: true
   collectorAddr: otel-collector:55680
   # comma separated list of provisioner names (ex: csi-powerstore.dellemc.com)
