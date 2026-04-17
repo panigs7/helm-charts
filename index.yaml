@@ -2056,6 +2056,32 @@ entries:
     version: 2.6.0
   csi-powerstore:
   - apiVersion: v2
+    appVersion: 2.21.0
+    created: "2026-04-17T10:09:30.341514696Z"
+    dependencies:
+    - condition: disasterRecovery.enabled
+      name: csm-disaster-recovery
+      repository: file://../csm-disaster-recovery
+      version: 1.0.0
+    description: 'PowerStore CSI (Container Storage Interface) driver Kubernetes integration.
+      This chart includes everything required to provision via CSI as well as a PowerStore
+      StorageClass. '
+    digest: 1d44ef6ffbe6c182887d8dd80d844de4124d4ab333ab1993e235f805f69cde67
+    home: https://github.com/dell/csi-powerstore
+    keywords:
+    - csi
+    - storage
+    kubeVersion: '>= 1.24.0'
+    maintainers:
+    - name: DellEMC
+    name: csi-powerstore
+    sources:
+    - https://github.com/dell/csi-powerstore
+    type: application
+    urls:
+    - https://github.com/panigs7/helm-charts/releases/download/csi-powerstore-2.21.0/csi-powerstore-2.21.0.tgz
+    version: 2.21.0
+  - apiVersion: v2
     appVersion: 2.20.0
     created: "2026-04-17T08:05:00.057105784Z"
     dependencies:
@@ -4387,4 +4413,4 @@ entries:
     urls:
     - https://github.com/dell/helm-charts/releases/download/karavi-topology-0.1.0/karavi-topology-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-17T08:06:01.025882694Z"
+generated: "2026-04-17T10:09:30.342074561Z"
