@@ -20,11 +20,11 @@
 ########################
 csi-powerstore:
   enabled: false
-  version: "v2.16.0"
+  version: "v2.20.0"
   images:
     # "driver" defines the container image, used for the driver container.
     driver:
-      image: quay.io/dell/container-storage-modules/csi-powerstore:v2.16.0
+      image: csm.artifactory.cec.lab.emc.com/csm-users/cicd/csi-powerstore:nightly
     # CSI sidecars
     attacher:
       image: registry.k8s.io/sig-storage/csi-attacher:v4.11.0
@@ -49,7 +49,7 @@ csi-powerstore:
     metadataretriever:
       image: quay.io/dell/container-storage-modules/csi-metadata-retriever:v1.13.0
     authorization:
-      image: quay.io/dell/container-storage-modules/csm-authorization-sidecar:v2.4.0
+      image:  csm.artifactory.cec.lab.emc.com/csm-users/cicd/csm-authorization-sidecar:nightly
   ## Controller ATTRIBUTES
   controller:
     controllerCount: 2
