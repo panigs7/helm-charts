@@ -2,6 +2,50 @@ apiVersion: v1
 entries:
   container-storage-modules:
   - apiVersion: v2
+    appVersion: 1.11.0
+    created: "2026-04-17T08:06:01.025423439Z"
+    dependencies:
+    - condition: csi-powerstore.enabled
+      name: csi-powerstore
+      repository: https://panigs7.github.io/helm-charts
+      version: 2.20.0
+    - condition: csi-powermax.enabled
+      name: csi-powermax
+      repository: https://panigs7.github.io/helm-charts
+      version: 2.17.1
+    - condition: csi-isilon.enabled
+      name: csi-isilon
+      repository: https://panigs7.github.io/helm-charts
+      version: 2.19.0
+    - condition: csi-vxflexos.enabled
+      name: csi-vxflexos
+      repository: https://panigs7.github.io/helm-charts
+      version: 2.16.1
+    - condition: csi-unity.enabled
+      name: csi-unity
+      repository: https://panigs7.github.io/helm-charts
+      version: 2.16.0
+    - condition: csm-replication.enabled
+      name: csm-replication
+      repository: https://panigs7.github.io/helm-charts
+      version: 1.14.0
+    - condition: karavi-observability.enabled
+      name: karavi-observability
+      repository: https://panigs7.github.io/helm-charts
+      version: 1.14.0
+    - condition: cert-manager.enabled
+      name: cert-manager
+      repository: https://charts.jetstack.io
+      version: 1.11.0
+    description: Container Storage Modules(https://github.com/dell/csm) open source
+      suite of Kubernetes storage enablers for Dell Technologies storage products.
+    digest: e97a156792f73a2a9d231a70f1a7ef42e65e71cfd6d8a92ed7061f58fd4daeee
+    name: container-storage-modules
+    type: application
+    urls:
+    - https://github.com/panigs7/helm-charts/releases/download/container-storage-modules-1.11.0/container-storage-modules-1.11.0.tgz
+    version: 1.11.0
+  - apiVersion: v2
     appVersion: 1.10.8
     created: "2026-04-16T14:14:39.403967411Z"
     dependencies:
@@ -4343,4 +4387,4 @@ entries:
     urls:
     - https://github.com/dell/helm-charts/releases/download/karavi-topology-0.1.0/karavi-topology-0.1.0.tgz
     version: 0.1.0
-generated: "2026-04-17T08:05:00.246857194Z"
+generated: "2026-04-17T08:06:01.025882694Z"
